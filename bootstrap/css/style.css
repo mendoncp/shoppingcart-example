@@ -1,0 +1,46 @@
+.navbar-default {
+    background-color: #3e2371;
+    
+}
+
+.navbar-brand{
+    
+    font-size: 35px;
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a{
+    
+    color:#fff;
+}
+.btn-secondary{
+    font-size: 15px;
+    background-color: #2AB32E;
+    color:#fff;
+    
+}
+
+.btn-space{
+    margin-top: 30px;
+    margin-right: 120px;
+    background-color: #b2b2b2;
+}
+
+.btn-right-space{
+     margin-top: 30px;
+     background-color: #b2b2b2;
+     color:#fff;
+}
+
+.icon-size-brand{
+    
+    width:70px;
+    height:40px;
+ 
+}
+
+.btn-third{
+    font-size: 15px;
+    background-color: #3e2371;
+    color:#fff;
+    
+}

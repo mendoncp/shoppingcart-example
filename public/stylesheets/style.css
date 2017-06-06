@@ -1,0 +1,115 @@
+.navbar-custom {
+    background-color:#3e2371;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.navbar-toggle:focus {
+  outline: 0;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+    border: 0.5px solid #fff;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav.navbar.navbar-default{
+    background-color: #3e2371;
+    
+}
+
+.navbar-brand{
+    
+    font-size: 35px;
+    color:#fff;
+}
+.navbar-default .navbar-nav>li>a{
+    
+    color:#fff;
+}
+.btn-secondary{
+    font-size: 15px;
+    background-color: #2AB32E;
+    color:#fff;
+    
+}
+
+.btn-space{
+    margin-top: 30px;
+    margin-right: 120px;
+    background-color: #3e2371;
+}
+
+.btn-right-space{
+     margin-top: 30px;
+     background-color: #3e2371;
+     color:#fff;
+}
+
+.icon-size-brand{
+    
+    width:70px;
+    height:40px;
+ 
+}

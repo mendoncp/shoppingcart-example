@@ -1,0 +1,32 @@
+<div class="container" ng-controller="ShoppingcartController" ng-init="getshoppinglist()">
+
+    <div class="container">
+        <img src="/images/shop1.png" class="img-responsive center-block logoImg"/>
+
+    </div> <!-- /container -->
+    <div class="container">
+        <div class="well span3 playlistWrap" style="padding-right: 5px; padding-left: 5px; ">
+
+            <div ng-if="items.length > 0">
+                <div class="list-group playlistBox"  ng-repeat="item in items track by $index">
+
+                    <div class="playlistBackground" ng-style="{'background-image':'url({{'/images/'+item.itemImageName}})'}"></div>
+                    <!-- <img ng-src="{{'/images/'+item.itemImageName}}" class="img-responsive center-block playlistOldImg" > -->
+                    <p><b>Item Name:</b>{{item.itemName}}</p>
+                    <p><b>Description:</b>{{item.itemDescription}}</p>
+                    <p><b>Price:</b>{{item.ItemPrice}}</p>
+                    <p class="playlistPrice"></p>
+                    <p><b>Quantity : </b>{{item.quantity}}</p>
+                    <p><button type="button" class="btn btn-third RemoveButton" ng-click="removeItem(item._id)">Remove Item</button></p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div >
+            <p><b>Total : </b>{{totalitems}}</p>
+            <p><button type="button" class="btn btn-third" ng-click="payforitems()">Pay</button></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container" ng-controller="viewProductController" ng-init="getProductItem()">
+
+    <div class="container">
+         <div class="list-group playlistBox">
+
+                    <div class="playlistBackground" ng-style="{'background-image':'url({{'/images/'+item.itemImageName}})'}"></div>
+                    <!-- <img ng-src="{{'/images/'+item.itemImageName}}" class="img-responsive center-block playlistOldImg" > -->
+                    <p><b>Item Name:</b>{{item.itemName}}</p>
+                    <p ng-if="!(item.hasOwnProperty('itemType2'))"><b>Description:</b>{{item.itemDescription}}</p>
+                    <p ng-if="item.hasOwnProperty('itemDay')"><b>Price:</b>{{item.ItemPrice}}</p>
+                    <p class="playlistPrice"></p>
+             <p>Quantity : </p><input type="text" size="5"  id="quantity" placeholder="1" ng-model="name.qunatity"/>
+                    <p><button type="button" class="btn btn-third restaurantButton" ng-click="addtoCart(item)">Add to Cart</button></p>
+
+                </div>
+    </div>
+</div>

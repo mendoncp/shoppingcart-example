@@ -1,0 +1,27 @@
+    <div class="container" ng-controller="productController">
+
+       <div class="container">
+    <img src="/images/shop1.png" class="img-responsive center-block logoImg"/>
+        
+    </div> <!-- /container -->
+      <div class="container">
+     <div class="well span3 playlistWrap" style="padding-right: 5px; padding-left: 5px; ">
+
+    <div ng-if="pitems.length > 0"> 
+     <div class="list-group playlistBox"  ng-repeat="item in pitems track by $index">
+
+            <div class="playlistBackground" ng-style="{'background-image':'url({{'/images/'+item.itemImageName}})'}"></div>
+           <!-- <img ng-src="{{'/images/'+item.itemImageName}}" class="img-responsive center-block playlistOldImg" > -->
+            <p><b>Item Name:</b>{{item.itemName}}</p>
+            <p ng-if="!(item.hasOwnProperty('itemType2'))"><b>Description:</b>{{item.itemDescription}}</p>
+            <p ng-if="item.hasOwnProperty('itemDay')"><b>Price:</b>{{item.ItemPrice}}</p>
+            <p class="playlistPrice"></p>
+            <p><button type="button" class="btn btn-third restaurantButton" ng-click="addItem(item.itemName,item._id)">Buy Item</button></p>
+
+</div>
+    </div>
+
+</div>
+
+</div>
+    </div>

@@ -1,0 +1,439 @@
+/*************************
+	HOME PAGE
+*************************/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.homeIcons {
+	    margin-top: 30px;
+	    margin-right: 5%;
+	    background-color: #3e2371;
+	}
+}
+
+/*************************
+	About Page
+*************************/
+@media screen{
+	.iconColor{
+		color: #3e2371;
+	}
+}
+
+/***************
+	PLAYLIST
+***************/
+.playlistBox {
+    width: 33%;
+    display: inline-block;
+    float: none !important;
+    min-height: auto;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1%;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+
+
+.playlistPrice {
+    margin-bottom: 50px;
+}
+
+
+.playlistBackground {
+   background-image: url({{item.itemimgPath}});
+    min-height: 30%;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+img.playlistOldImg {
+    display: none;
+}
+@media screen and (max-width: 991px){
+	.playlistBox {
+		width: 100%;
+		display: block;
+		min-height: auto;
+	}
+	.playlistBackground {
+		min-height: 45%;
+	}
+}
+@media screen and (max-width: 599px){
+	.playlistBox {
+		min-height: auto !important;
+	}
+	.playlistBackground {
+		min-height: 25% !important;
+	}
+}
+.playlistWrap {
+    background: white;
+    margin-top: 20px;
+}
+.playlistHead {
+	display: block;
+    float: none;
+    display: none;
+}
+p > .restaurantButton {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    background: #333;
+    color: white;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+p > .restaurantButton:hover {
+    background: white;
+    border: 1px solid #333;
+    color: #333;
+}
+
+p > .RemoveButton {
+	position: absolute;
+	bottom: 2%;
+	right: 4%;
+	background: #4B0082;
+	color: white;
+	-webkit-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+p > .RemoveButton:hover {
+	background: white;
+	border: 1px solid #4B0082;
+	color: #4B0082;
+}
+.logoImg, .logoImgHome {
+	padding-bottom: 20px;
+}
+.logoImg, .logoImgHome {
+	width: 25%;
+}
+@media screen and (max-width: 991px){
+	.playlistSearchForm input ~ div.col-md-10, .homeSearchForm input ~ div.col-md-10 {
+	    display: inline !important;
+	}
+	.playlistSearchForm input.form-control.ng-pristine, .homeSearchForm input.form-control.ng-pristine {
+	    display: inline !important;
+	    width: 100% !important;
+	    margin-bottom: 10px;
+	}
+	.playlistSearchForm button {
+	    display: block;
+		margin: 0 auto;
+	}
+	.logoImg {
+	    width: 20% !important;
+	    padding-bottom: 20px;
+	    float: left;
+	    box-sizing: border-box;
+	}
+	.logoImgHome {
+		padding-bottom: 20px;
+		box-sizing: border-box;
+	}
+	.row.playlistSearchForm, .row.homeSearchForm {
+/* 	    width: 80%; */
+	    box-sizing: border-box;
+/* 	    float: left; */
+/* 	    padding-left: 10%; */
+    display: block;
+    width: 100%;
+	}
+}
+/*****************
+	PRODUCT PAGE
+*****************/
+li.active > img.productImage {
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    height: 50%;
+    width: auto;
+}
+li.active > p.ng-binding {
+    text-align: center;
+}
+.productButton {
+    width: 48.3%;
+    box-sizing: border-box;
+    margin: 1% .5%;
+}
+.productButtonWrapper button:last-of-type {
+    margin-top: 1%;
+}
+.productWrap {
+    background: white;
+}
+.productButtonWrapper > button, .productButtonWrapper > div > button {
+    background: #333 !important;
+    color: white !important;
+    text-shadow: none !important;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    margin-bottom: 1%;
+}
+.productButtonWrapper > button:hover, .productButtonWrapper > div > button:hover {
+    background: white !important;
+    border: 1px solid #333 !important;
+    color: #333 !important;
+    text-shadow: none !important;
+}
+@media (min-width: 768px) {
+	.productButtonWrapper {
+	    float: none !important;
+	    margin: 0 auto !important;
+	    width: 40% !important;
+	}
+}
+
+/**************
+	SPECIALS
+**************/
+@media screen and (min-width: 992px){
+	.specialsItems > p {
+	    text-align: left;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.specialsItems {
+	    width: 33.3%;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 500px;
+	    box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 991px){
+	.specialsItems img {
+	   width: 100%;
+		display: block;
+		min-height: auto;
+	}
+	.specialsItems {
+		width: 100%;
+	}
+	.specialsItems {
+		min-height: auto;
+	}
+	.specialsItems p {
+	    text-align: left;
+
+	    margin: 0 auto;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+[ng-controller*="specialViewController"] {
+    background: white;
+}
+
+
+
+/***************
+	FOODS
+***************/
+
+@media screen and (min-width: 992px){
+	.foodItems > p {
+	    text-align: left;
+	      padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.foodItems {
+	    width: 33.3%;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 500px;
+	    box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 991px){
+	.foodItems img {
+		width: 100%;
+		display: block;
+		min-height: auto;
+	}
+
+	.foodItems {
+		width: 100%;
+	}
+	.foodItems {
+		min-height: auto;
+	}
+	.foodItems p {
+	    text-align: left;
+	    
+	    margin: 0 auto;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	  	}
+}
+[ng-controller*="foodrestViewController"] {
+    background: white;
+}
+
+.foodItems>img, .specialsItems>img, .drinkItems>img, .featureItems>img, .eventItems>img {
+    padding: 10px;
+}
+
+
+
+/**************
+	DRINKS
+**************/
+@media screen and (min-width: 992px){
+	.drinkItems > p {
+	    text-align: left;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.drinkItems {
+	    width: 33.3%;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 500px;
+	    box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 991px){
+	.drinkItems img {
+	    margin: 0 auto;
+	    max-width: 400px;
+	    width: 90%;
+	}
+	.drinkItems {
+		width: 100%;
+	}
+	.drinkItems {
+		min-height: auto;
+	}
+	.drinkItems p {
+	    text-align: left;
+	    width: 90%;
+	    margin: 0 auto;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+}
+[ng-controller*="drinkrestViewController"] {
+    background: white;
+}
+
+
+
+/**************
+	Features
+**************/
+@media screen and (min-width: 992px){
+	.featureItems > p {
+	    text-align: left;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.featureItems {
+	    width: 33.3%;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 500px;
+	    box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 991px){
+	.featureItems img {
+	     width: 100%;
+		display: block;
+		min-height: auto;
+	}
+	.featureItems {
+		width: 100%;
+	}
+	.featureItems {
+		min-height: auto;
+	}
+	.featureItems p {
+	    text-align: left;
+	    
+	    margin: 0 auto;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+
+[ng-controller*="featurerestViewController"] {
+    background: white;
+}
+
+
+
+
+/**************
+	Events
+**************/
+@media screen and (min-width: 992px){
+	.eventItems > p {
+	    text-align: left;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.eventItems {
+	    width: 33.3%;
+	    display: inline-block;
+	    vertical-align: top;
+	    min-height: 500px;
+	    box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 991px){
+	.eventItems img {
+	    width: 100%;
+		display: block;
+		min-height: auto;
+	}
+	.eventItems {
+		width: 100%;
+	}
+	.eventItems {
+		min-height: auto;
+	}
+	.eventItems p {
+	    text-align: left;
+	    
+	    margin: 0 auto;
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+}
+
+[ng-controller*="eventrestViewController"] {
+    background: white;
+}
+
+
+
+
+
