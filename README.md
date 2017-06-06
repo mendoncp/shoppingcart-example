@@ -1,2 +1,2 @@
-# eatdrinx.com
+# Shopping Cart Example
 Go For It
